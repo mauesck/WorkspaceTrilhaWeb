@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* Configuração geral do corpo da página */
+
+body{
+	margin: 0 auto;
+	font-family: "Century Gothic", sans-serif;
+}
+
+/* Cabeçalho */
+header{
+	height: 170px;
+	background-color: #008eb6;
+}
+header img{
+	float: left;
+	height: 150px;
+	width: 150px;
+	margin: 10px;
+}
+header h1{
+	float: left;
+	margin: 50px 0 0 30px;
+	font-size: 60px;
+	color: #ffffff;
+}
+
+/* Menu */
+nav{
+	clear: both;
+	width: 80%;
+	margin: 0px auto;
+	height: 55px;
+}
+nav a{
+	color: white;
+	text-decoration: none;
+	text-align: center;	
+}
+nav .opcao{
+	float: left;
+	width: 31.3%;
+	background-color: #b1ccf5;
+	padding: 10px 0; /*afastar algo que está dentro de um elemento da sua borda (como um texto que está muito grudado na borda),*/
+	margin: 0 1%; /*separa dois elementos distintos*/
+	font-size: 26px;
+}
+nav .opcao:hover{ /*":hover" muda a cor do background do texto quando colocado a seta encima*/
+	background-color: rgb(0, 0, 255);
+}
+
+/* Área geral para conteúdos específicos de cada página */
+section{
+	clear: both; /*desconsidera os floats anteriores*/
+	min-height: 410px; /*encosta o rodapé no final da página*/
+	width: 100%;
+	margin-top: 0px;
+}
+
+/* Rodapé */
+footer{
+	background-color: #005f89;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+/*******************************************
+		Configuração da página incial
+*******************************************/
+section #topo{
+	width: 900px;
+	margin: 0px auto;
+	height: 250px;
+	background-color: red;
+}
+.geladeira{
+	height: 250px;
+	width: 125px;
+}
+.direita{
+	float: right;
+}
+.esquerda{
+	float: left;
+}
+section #titulos{
+	float: left;
+	height: 250px;
+	width: 650px;
+	margin: 0px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
