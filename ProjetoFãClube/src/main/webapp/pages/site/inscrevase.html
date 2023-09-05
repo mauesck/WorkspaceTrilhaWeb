@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Fã Clube Cs Lovers">
+	<meta name="keywords" content="Counter Strike, CSGO, FPS">
+	<meta name="author" content="Thiago Mauesck Lima">
+	<title>CS LOVERS</title>
+	<link rel="stylesheet" type="text/css" href="../../css/csgo.css">
+</head>
+<body>
+	<header>
+		<img alt="Logo Cs Lovers" src="../../imgs/logo.png">
+	</header>
+	<nav>
+		<div class="opcao"><a href="../../index.html">INÍCIO</a></div>
+		<div class="opcao"><a href="../../pages/site/conteudo.html">CONTEÚDO</a></div>
+		<div class="opcao"><a href="../../pages/site/inscrevase.html">INSCREVA-SE</a></div>
+	</nav>
+	<section>
+		<h1>Torne-se um CS Lover, inscreva-se em nosso site e receba nosso conteúdo e atualizações em seu e-mail.</h1>
+		<form name="forminscrevase" method="post" action="#">
+			<fieldset class="dadosPessoais">
+				<label for="nome">Nome:</label>
+				<input type="text" name="txtnome" id="nome">
+				<label for="sexo">Sexo:</label>
+				<div class="radioForm">
+					<input type="radio" name="radioSexo" id="masc">
+					<label for="masc">Masc</label>
+					<input type="radio" name="radioSexo" id="fem">
+					<label for="fem">Fem</label>
+					<input type="radio" name="radioSexo" id="outro">
+					<label for="outro">Outro</label>
+				</div>
+				<label for="nome">Data de nascimento:</label>
+				<input type="date" name="dateData" id="data">
+				<label for="email">E-mail:</label>
+				<input type="email" name="emailEmail" id="email">
+				<label for="telefone">Telefone:</label>
+				<input type="tel" name="telTelefone" id="telefone">
+				<div class="botaoForm">
+					<button type="reset" id="botaoLimpar">Limpar</button>
+					<button type="submit" id="botaoEnviar">Enviar</button>
+				</div>
+			</fieldset>
+		</form>
+	</section>
+	<footer>Copyright &copy; Thiago Mauesck 2023</footer>
+</body>
+</html>
