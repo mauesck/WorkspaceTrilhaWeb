@@ -1,13 +1,19 @@
 function validaFaleConosco() {
-	//validação nome
-	if (document.frmfaleconosco.txtnome.value == "") {
-		alert("Preencha o campo Nome.");
+	//validação nome com expressões regulares
+	var nome = document.frmfaleconosco.txtnome.value;
+	var expRegNome = new RegExp("^[A-zÀ-ü]{3,}([ ]{1}[A-zÀ-ü]{2,})+$");
+
+	if (!expRegNome.test(nome)) {
+		alert("Primeiro nome com no minímo 3 letras. \n" + "Sobrenome com no minímo 2 letras.");
 		document.frmfaleconosco.txtnome.focus();
 		return false;
 	}
-	//validação telefone
-	if (document.frmfaleconosco.txttelefone.value.length != 11) {
-		alert("O número deve ter 11 digítos com o DDD sem espaços ou caracteres!");
+	//validação telefone com expressões regulares
+	var fone = document.frmfaleconosco.txttelefone.value;
+	var expRegFone = new RegExp("^[(]{1}[1-9]{2}[)]{1}[0-9]{4,5}[-]{1}[0-9]{4}$");
+	
+	if (!expRegFone.test(fone)) {
+		alert("Insira da forma correta com todos os caracteres: (**)*****-****");
 		document.frmfaleconosco.txttelefone.focus();
 		return false;
 	}
@@ -24,7 +30,7 @@ function validaFaleConosco() {
 				alert("Escolha um motivo válido!")
 				document.frmfaleconosco.selmotivo.focus();
 				return false;
-			} 
+			}
 		}
 	}
 	//validação motivo-produto
