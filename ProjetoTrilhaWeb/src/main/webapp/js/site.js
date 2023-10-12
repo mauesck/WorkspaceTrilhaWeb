@@ -18,7 +18,10 @@ function validaFaleConosco() {
 		return false;
 	}
 	//validação do email
-	if (document.frmfaleconosco.txtemail.value == "") {
+	var email = document.frmfaleconosco.txtemail.value;
+	var expRegEmail = new RegExp("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
+	
+	if (!expRegEmail.test(email)) {
 		alert("Insira o e-mail corretamente: ( nome@plataforma.com ).");
 		document.frmfaleconosco.txtemail.focus();
 		return false;
@@ -110,7 +113,15 @@ function verificaMotivo(motivo) {
 	}
 }//fim da função verificaMotivo
 
+//jQuery
 
+//assim queo documento html for carregado por completo...
+$(document).ready(function(){
+	//carrega cabeçalho, menu e rodapé aos respectivos locais
+	$("header").load("/ProjetoTrilhaWeb/pages/site/general/cabecalho.html");
+	$("nav").load("/ProjetoTrilhaWeb/pages/site/general/menu.html");
+	$("footer").load("/ProjetoTrilhaWeb/pages/site/general/rodape.html");
+});
 
 
 
